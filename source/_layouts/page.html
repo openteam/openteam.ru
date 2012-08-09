@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div id="body">
+  <!-- BEGIN content -->
+  <div id="content">
+    <!-- begin post -->
+    <div class="post">
+        {% if page.title %}
+          <h2>{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
+        {% endif %}
+
+        {{ content }}
+    </div>
+  </div>
+
+<!--
+
+    <div id="sidebar">
+      <div class="box">
+        <div class="b"><h2>Наши ресурсы</h2>
+          <div class="tags">
+          <ul class='xoxo blogroll'>
+            <li><a href="http://drink.tomsk.ru" title="Не знаете, кого послать за добавкой? А наш сервис знает!">Веб 2.0 для пьющих</a></li>
+            <li><a href="http://naidi.tomsk.ru" title="Поисковый сервис по ресурам сетей г. Томска">Волшебный поиск по Томским ресурсам</a></li>
+            <li><a href="http://git.openteam.ru" title="Репозиторий исходного кода OpenTeam" target="_blank">Наш репозиторий исходников</a></li>
+            <li><a href="http://issues.openteam.ru" title="Тут мы работаем над нашими проектами">Трекер наших проектов</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+</div>
