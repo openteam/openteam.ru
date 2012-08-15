@@ -1,0 +1,533 @@
+* {
+  margin: 0; padding: 0;
+}
+body {
+  text-align: center;
+  font: 12px Verdana, Arial, Helvetica, sans-serif;
+  color: #000000;
+  line-height: 1.8em;
+  background: url('/images/background1.gif') repeat 0 0;
+}
+a {
+  text-decoration: underline;
+  color: #2978B0;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.break {
+  font-size: 0;
+  width: 0; height: 0;
+  clear: both;
+}
+.alignleft {
+  float: left;
+  margin: 4px 10px 5px 0;
+}
+.alignright {
+  float: right;
+  margin: 4px 0 5px 10px;
+}
+.aligncenter {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+#buffer {
+  background: url('/images/background2.gif') repeat-y center 0;
+}
+
+/** BEGIN wrapper **/
+#wrapper {
+  width: 986px;
+  margin: auto auto;
+  text-align: left;
+}
+/** END wrapper **/
+
+/** BEGIN header **/
+#header {
+  height: 152px;
+  background: url('/images/header.gif') repeat-x 0 0;
+}
+  #header ul {
+    list-style-type: none;
+    height: 30px;
+    padding-left: 8px;
+  }
+    #header ul li {
+      float: left;
+      text-transform: uppercase;
+    }
+    #header ul li a {
+      color: #D9E7EA;
+      display: block;
+      padding: 8px 15px 4px 9px;
+    }
+    #header ul li a:hover {
+      background-color: #637380;
+      color: #ffffff;
+    }
+  #header .links {
+    float: right;
+    color: #D9E7EA;
+    margin-top: -24px;
+    padding-right: 15px;
+  }
+    #header .links a {
+      color: #D9E7EA;
+      margin: 0 8px;
+    }
+    #header .links a:hover {
+      color: #ffffff;
+    }
+  #header .logo {
+    float: left;
+  }
+    #header .logo h1 {
+      font-size: 0;
+      padding: 20px 24px 0;
+    }
+    #header .logo h1 a {
+      display: block;
+      text-indent: -9999px;
+      outline: none;
+      overflow: hidden;
+      background: url('/images/openteam-big.png') no-repeat 0 0;
+      width: 274px; height: 72px;
+    }
+    #header .logo p {
+      display: none;
+    }
+  #header h2 {
+    float: right;
+    text-align: right;
+    margin: 25px 20px 0 0;
+  }
+  #header .ad468x60 {
+    float: right;
+    margin: 28px 22px;
+  }
+  #header ol {
+    list-style-type: none;
+    padding: 17px 10px 0;
+  }
+    #header ol li {
+      float: left;
+      padding: 0 12px;
+    }
+    #header ol li a {
+      color: #21262A;
+    }
+    #header ol li a:hover {
+      color: #000000;
+    }
+/** END header **/
+
+/** BEGIN body **/
+#body {
+  background-color: #ffffff;
+}
+/** END body **/
+
+/** BEGIN content **/
+#content {
+/*  width: 670px;*/
+  float: left;
+  padding-bottom: 20px;
+}
+  #content p {
+    margin-bottom: 10px;
+    line-height: 1.8em;
+  }
+  #content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+  #content blockquote {
+    margin: 0 0 10px 20px;
+    padding: 10px 10px 0;
+    background-color: #f5f5f5;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DEDCD4;
+  }
+  #content ul {
+    list-style: none;
+    margin: 0 0 10px 0px;
+  }
+  #content ol {
+    margin: 0 0 10px 16px;
+  }
+  #content li {
+    padding: 2px 0;
+  }
+  #content .post {
+    padding: 25px 35px 0;
+    color: #565656;
+  }
+    #content .post h2 {
+      font-size: 1.5em;
+      padding-bottom: 5px;
+      margin: 0 -10px 5px;
+      border-bottom: 1px dotted #DEDCD4
+    }
+      #content .post h2 a {
+        color: #2978B0;
+      }
+    #content .post .date {
+      color: #8A8A8A;
+      margin-bottom: 20px;
+    }
+      #content .post .date a {
+        color: #2978B0;
+      }
+      #content .post .comments a {
+        padding-left: 16px;
+        background: url('/images/comments.gif') no-repeat 0 2px;
+        font-size: 10px;
+        margin-left: 20px;
+      }
+    #content .post a {
+    }
+    #content .post .details {
+      background-color: #EEEEEE;
+      border: 1px solid #DBD9D9;
+      padding: 5px 10px 25px;
+      color: #8A8A8A;
+      margin: 20px -10px 0;
+      clear: both;
+    }
+      #content .post .details .l {
+        float: left;
+      }
+      #content .post .details .r {
+        float: right;
+      }
+      #content .post .details a {
+      }
+/** END content **/
+
+/** BEGIN sidebar **/
+#sidebar {
+  width: 301px;
+  float: right;
+  padding: 25px 10px 20px 0;
+}
+  #sidebar h2 {
+    color: #2978B0;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  #sidebar ul {
+    list-style-type: none;
+    padding-bottom: 15px;
+  }
+    #sidebar ul li {
+      line-height: 1.4em;
+      padding: 3px 0;
+    }
+    #sidebar ul li a {
+      color: #565656;
+    }
+  #sidebar .l {
+    float: left;
+    width: 140px;
+    padding: 10px 0 0 15px;
+  }
+  #sidebar .r {
+    float: right;
+    width: 140px;
+    padding-top: 10px;
+  }
+  #sidebar form {
+    background: url('/images/search.gif') no-repeat 0 0;
+    width: 301px; height: 44px;
+    margin-bottom: 10px;
+  }
+    #sidebar form input {
+      float: left;
+      border: 1px solid #ffffff;
+      margin: 13px 8px 0 11px;
+      width: 216px;
+    }
+    #sidebar form button {
+      float: left;
+      border: 0;
+      text-indent: -9999px;
+      width: 56px; height: 26px;
+      margin-top: 8px;
+      background-color: transparent;
+    }
+  #sidebar .box {
+    background: url('/images/sidebody.gif') repeat-y 0 0;
+    margin-bottom: 10px;
+    width: 301px;
+  }
+    #sidebar .box .b {
+      background: url('/images/sidefoot.gif') no-repeat 0 bottom;
+      padding-bottom: 10px;
+    }
+    #sidebar .box h2 {
+      background: url('/images/sidehead.gif') no-repeat 0 0;
+      padding: 10px 10px 6px;
+      margin-bottom: 7px;
+    }
+    #sidebar .box .sponsors {
+      text-align: center;
+    }
+    #sidebar .box ul {
+      padding: 5px 15px;
+    }
+      #sidebar .box ul li {
+        line-height: 1.4em;
+        padding: 4px 0 4px 14px;
+        background: url('/images/bullet.gif') no-repeat 0 9px;
+      }
+      #sidebar .box ul li a {
+        color: #8A8A8A;
+      }
+    #sidebar .box .flckr {
+      text-align: center;
+    }
+      #sidebar .box .flckr img {
+        margin: 2px;
+      }
+    #sidebar .box .video {
+      padding: 5px 0 5px 20px;
+    }
+    #sidebar .box .tags {
+      padding: 0 20px 5px;
+    }
+      #sidebar .box .tags a {
+        color: #8a8a8a;
+      }
+      #sidebar .box .tags a:hover {
+        color: #2978b0;
+      }
+/** END sidebar **/
+
+/** BEGIN footer **/
+#footer {
+  background-color: #21262A;
+  color: #ffffff;
+  clear: both;
+  padding: 15px;
+  height: 15px;
+
+}
+  #footer a {
+    color: #ffffff;
+  }
+  #footer p.copy {
+    float: left;
+//    font-weight: bold;
+  }
+  #footer p.tbe {
+    float: right;
+  }
+/** END footer **/
+
+/** BEGIN miscellaneous **/
+.postnav {
+  clear: both;
+  text-align: center;
+  padding-top: 20px;;
+}
+#comments {
+  padding: 0 35px 20px;
+}
+  #comments h2 {
+    margin: 20px 0 5px;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+  #comments p {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+  }
+  #comments form {
+    padding-top: 20px;
+  }
+    #comments form p {
+      margin-bottom: 5px;
+    }
+    #comments form input, textarea {
+      border: 1px solid #cccccc;
+      font-size: 0.9em;
+      font-family: Verdana;
+      padding: 4px;
+      background-position: 4px 4px;
+      background-repeat: no-repeat;
+    }
+    #comments form input {
+      width: 260px;
+      border: 1px solid #cccccc;
+    }
+    #comments form textarea {
+      width: 350px;
+      padding: 4px 4px !important;
+      border: 1px solid #cccccc;
+    }
+    #comments form button {
+      border: 1px solid #909090;
+      background-color: #cccccc;
+      font-size: 0.9em;
+      font-family: Verdana;
+      width: 120px; height: 23px;
+    }
+  .commentdetails {
+    margin-top: 25px;
+  }
+  .commentauthor {
+    margin-bottom: 5px !important;
+    font-weight: bold;
+  }
+  .commentdate {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    color: #909090;
+  }
+  .required {
+    color: #ff0000;
+  }
+h2.title {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 25px 25px 0;
+  color: #565656;
+}
+/** END miscellaneous **/
+
+/** BEGIN wordpress 2.7 comments **/
+#comments ol {
+  list-style-type: none;
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+  #comments ol li {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+  }
+  #comments ol li .avatar {
+    float: right;
+  }
+  #comments ol li .comment-author {
+
+  }
+    #comments ol li .comment-author .fn {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  #comments ol li .comment-meta {
+    font-size: 0.9em;
+    color: #999999;
+    margin: 5px 0 10px;
+  }
+  #comments ol li .reply {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  #comments .children {
+    list-style-type: none;
+  }
+#comments .navigation {
+  padding: 10px 0 20px;
+  font-size: 0.9em;
+}
+  #comments .navigation a {
+    color: #999999;
+    padding: 3px 8px;
+    border: 1px solid #cccccc;
+  }
+  #comments .navigation a:hover {
+    color: #000000;
+    border-color: #000000;
+  }
+/** END wordpress 2.7 comments **/
+
+
+.thumbnail {
+  border: 2px solid #ccc;
+  padding: 5px;
+  margin: 0 0 15px 20px;
+}
+
+.post img {
+  border: 2px solid #ccc;
+  padding: 5px;
+  margin: 10px 10px 5px 10px;
+}
+
+img.awards {
+  border: 0 !important;
+}
+
+.left {
+  float: left;
+}
+
+.portfolio-website {
+  display: block;
+  min-height:180px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.website-thumbnail {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.website-description {
+  margin-top: 15px;
+}
+
+.website-clear {
+  clear: both;
+}
+
+.website-name {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.website-url a {
+  color: #565656;
+  font-weight: bold;
+}
+
+.post a {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.post hr {
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#c2c2c2), to(#fff));
+  border:none;
+  color:white;
+  display:block;
+  height:1px;
+  margin: 20px 0 20px 0;
+}
+
+a.fancybox {
+  text-decoration: none;
+}
