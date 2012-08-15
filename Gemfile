@@ -16,5 +16,4 @@ group :development do
 end
 
 gem 'capistrano'
-gem 'capistrano-ext'
 gem 'sinatra', '~> 1.3.2'
